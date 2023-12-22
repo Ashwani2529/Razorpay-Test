@@ -50,7 +50,7 @@
     document.getElementById('rzp-button1').onclick = async function(e){
         let amt=document.getElementById('amount').value;
         e.preventDefault();
-        let response=await fetch("http://localhost:3000/payment",{
+        let response=await fetch("https://razorpay-test.onrender.com/payment",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
