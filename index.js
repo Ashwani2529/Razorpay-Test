@@ -26,6 +26,7 @@ let order=await instance.orders.create({
     key1: "TREATO BOOKING ORDER"
   }
 });
+    console.log(order);
 res.status(201).json({
     success:true,
     order,
